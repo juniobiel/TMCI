@@ -1,19 +1,24 @@
 import React from 'react';
-//import {Container} from './styles';
-import {Container, TextField, Button, TextareaAutosize} from '@material-ui/core';
+import {Container, Content} from './styles.js';
 
 
 export default function Contato() {
     return(
         <Container maxWidth="lg">
-            <form className='Form' noValidate autoComplete="off">
-                <TextField id="standard-full-width" fullWidth label="Nome" required />
-                <TextField id="standard-full-width" fullWidth label="E-mail" type="email" required />
-                <TextField id="standard-full-width" fullWidth label="Assunto" required />
-                <TextField id="standard-full-width" fullWidth label="WhatsApp" required />
-                <TextField id="standard-full-width" fullWidth label="Mensagem" required />
-            </form>
-            <Button id="button-default" variant="contained" color="default" >Enviar</Button>
+            <Content>
+                <section>
+                    <div></div>
+                    <p>Site em construção, encaminhe sua solicitação que em breve entraremos em contato!</p>
+                </section>
+                <form>
+                    <input name="nome" placeholder="Nome"/>
+                    <input type="email" name="email" placeholder="E-mail" />
+                    <input name="whatsApp" placeholder="WhatsApp" />
+                    <textarea name="mensagem" placeholder="Digite sua mensagem"></textarea>
+
+                    <button type="submit">Enviar</button>
+                </form>
+            </Content>
         </Container>
         
     );

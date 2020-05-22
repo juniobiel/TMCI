@@ -1,5 +1,6 @@
 import React from 'react';
-import {Container, Content} from './styles.js';
+import {Container, Content, Form} from './styles.js';
+import Logo from '../../assets/Logomarca_TMCI.png';
 
 
 export default function Contato() {
@@ -7,17 +8,20 @@ export default function Contato() {
         <Container maxWidth="lg">
             <Content>
                 <section>
-                    <div></div>
-                    <p>Site em construção, encaminhe sua solicitação que em breve entraremos em contato!</p>
+                    <div id="logo-image">
+                        <img src={Logo} alt="TMCI" />
+                    </div>
+                    <p>Site em construção!</p>
+                    <p>Encaminhe sua solicitação que em breve entraremos em contato!</p>
                 </section>
-                <form>
+                <Form>
                     <input name="nome" placeholder="Nome"/>
                     <input type="email" name="email" placeholder="E-mail" />
                     <input name="whatsApp" placeholder="WhatsApp" />
                     <textarea name="mensagem" placeholder="Digite sua mensagem"></textarea>
 
                     <button type="submit">Enviar</button>
-                </form>
+                </Form>
             </Content>
         </Container>
         

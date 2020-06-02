@@ -20,7 +20,8 @@
     "styled-components": "^5.1.0"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "node server",
+    "postinstall": "yarn build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"

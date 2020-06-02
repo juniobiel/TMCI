@@ -1,6 +1,11 @@
 import React, { useState } from 'react';
+import { ToastContainer ,toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
+
 import {Container, Content, Form} from './styles.js';
 import Logo from '../../assets/Logomarca_TMCI.png';
+
 import api from '../../services/api';
 
 export default function Contato() {
@@ -23,10 +28,27 @@ export default function Contato() {
         try {
             await api.post('/sendMail', data);
 
-            console.log('Sucesso!');
+            toast.success('✉ Mensagem enviada com sucesso!', {
+                position: "top-right",
+                autoClose: 5000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+                });
+
         } catch (err) {
 
-            console.log('Erro');
+            toast.error('Ops! Não conseguimos encaminhar sua solicitação.', {
+                position: "top-right",
+                autoClose: 5000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+                });
 
             document.getElementById("btn-submit").disabled = false;
         }
@@ -72,6 +94,8 @@ export default function Contato() {
                     </textarea>
 
                     <button id="btn-submit" type="submit">Enviar</button>
+
+                    <ToastContainer />
                 </Form>
             </Content>
         </Container>

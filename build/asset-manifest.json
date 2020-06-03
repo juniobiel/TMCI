@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/static/css/main.ad9bd6b9.chunk.css",
+    "main.js": "/static/js/main.d688ba38.chunk.js",
+    "main.js.map": "/static/js/main.d688ba38.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.1f1f19a3.js",
+    "runtime-main.js.map": "/static/js/runtime-main.1f1f19a3.js.map",
+    "static/css/2.d34346ea.chunk.css": "/static/css/2.d34346ea.chunk.css",
+    "static/js/2.c6aad4ba.chunk.js": "/static/js/2.c6aad4ba.chunk.js",
+    "static/js/2.c6aad4ba.chunk.js.map": "/static/js/2.c6aad4ba.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.9aed379acc00bb2a9815842803f5bfbb.js": "/precache-manifest.9aed379acc00bb2a9815842803f5bfbb.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/2.d34346ea.chunk.css.map": "/static/css/2.d34346ea.chunk.css.map",
+    "static/css/main.ad9bd6b9.chunk.css.map": "/static/css/main.ad9bd6b9.chunk.css.map",
+    "static/js/2.c6aad4ba.chunk.js.LICENSE.txt": "/static/js/2.c6aad4ba.chunk.js.LICENSE.txt",
+    "static/media/Logomarca_TMCI.png": "/static/media/Logomarca_TMCI.fb20b3f5.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.1f1f19a3.js",
+    "static/css/2.d34346ea.chunk.css",
+    "static/js/2.c6aad4ba.chunk.js",
+    "static/css/main.ad9bd6b9.chunk.css",
+    "static/js/main.d688ba38.chunk.js"
+  ]
+}

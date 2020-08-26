@@ -1,0 +1,228 @@
+#about-container {
+    width: 100%;
+    height: auto;
+
+    background-image: url('../../assets/images/circuitAbout.svg');
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+    background-attachment: fixed;
+    background-size: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#about-container #page-header {
+    width: 100%;
+    background: #2E308B;
+    color: white;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+#about-container #page-header h1 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+#about-container .navigator {
+    text-decoration: none;
+    width: 100%;
+    padding: 0.3rem 0;
+    background: #000;
+    color: white;
+    text-align: center;
+    margin-bottom: 0.6rem;
+    
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#about-container .navigator h3,
+#about-container .navigator span {
+    margin-left: auto;
+    margin-right: 1rem;
+}
+
+#about-container #about-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#about-container #about-section img {
+    height: 9rem;
+}
+
+#about-container #about-section section p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    padding-left: 1rem;
+    padding-right: 1.6rem;
+    text-indent: 1rem;
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+    line-height: 1.3rem;
+}
+
+#about-container #history-section #history-title {
+    width: 100%;
+    background: #000;
+    color: white;
+    padding: 0.4rem;
+    margin-bottom: 1rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#about-container #history-section section p {
+    text-align: justify;
+    padding-left: 1rem;
+    padding-right: 1.6rem;
+    text-indent: 1rem;
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+    line-height: 1.3rem;
+}
+
+#about-container #history-section section p + p + p {
+    text-decoration: underline;
+}
+
+
+#about-container #pillars .pillar-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 85%;
+    background: #2E308B;
+    color: white;
+
+    margin-bottom: 1rem;
+}
+
+#about-container #pillars .pillar-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-align: justify;
+    padding-left: 1rem;
+    padding-right: 1.6rem;
+    text-indent: 1rem;
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+    line-height: 1.3rem;
+}
+
+@media (min-width: 700px) {
+    #about-container {
+        height: 100vh;
+
+        background-size: 50%;
+    }
+
+    #about-container #page-header {
+        display: flex;
+        flex-direction: row;
+        margin-top: 0;
+        height: 3rem;
+        align-items: center;
+        
+        justify-content: space-between;
+    }
+
+    #about-container #page-header h1 {
+        padding-left: 5rem;
+        margin-bottom: 0;
+    }
+
+    #about-container #page-header nav {
+        display: flex;
+        justify-content: right;
+        padding-right: 10rem
+    }
+
+    #about-container #page-header .navigator {
+        background: none;
+        text-decoration: none;
+        width: auto;
+        padding: 0;
+        background: none;
+        color: white;
+        text-align: center;
+        margin-bottom: 0;
+        
+        display:flex;
+        flex-direction: row;
+        justify-content: right;
+        align-items: center;
+        margin-right: 2rem;
+    }
+
+    #about-container #page-header .navigator + .navigator {
+        margin-right: 0;
+    }
+
+    #about-container .navigator h3,
+    #about-container .navigator span {
+        margin: 0;
+        transition: 0.2s;
+    }
+
+    #about-container #page-header .navigator img {
+        opacity: 0;
+    }
+
+    #about-container #page-header .navigator h3:hover {
+        color: cyan;
+    }
+
+    #about-container #about-section {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #about-container #about-section img {
+        height: 15rem;
+        margin-left: 2rem;
+    }
+
+    #about-container #about-section section p {
+        padding-right: 3rem;
+        line-height: 1.5rem;
+        font-size: 1.4rem;
+    }
+
+    #about-container #history-section #history-title{
+        width: 60%;
+    }
+
+    #about-container #history-section section p {
+        padding-left: 5rem;
+        padding-right: 15rem;
+    }
+
+    #about-container #pillars {
+        width: 100%;
+    }
+
+    #about-container #pillars .pillar-title {
+        width: 40%;
+    }
+
+    #about-container #pillars .pillar-body {
+        justify-content: left;
+        padding-left: 5rem;
+    }
+}

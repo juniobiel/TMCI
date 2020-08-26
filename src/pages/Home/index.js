@@ -16,7 +16,7 @@ function Home(){
                 <div id="menu-title">
                     <h1>Serviços de qualidade!</h1>
                 </div>
-                <Link to="">
+                <Link to="about">
                     <div className="menu-item">
 
                             <h3>Sobre a TMCI</h3>

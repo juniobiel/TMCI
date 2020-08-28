@@ -1,35 +1,17 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
+
+import Header from '../../components/Header';
 
 import marca from '../../assets/images/tmciStyled.svg';
-import seta from '../../assets/icons/setaIcon.svg';
+
 
 import './styles.css';
 
 function About(){
     return(
         <div id="about-container">
-            <header id="page-header">
-                <h1>Sobre a TMCI</h1>
-
-                <nav>
-                    <Link to="" className="navigator">
-                        <h3>Nossos Serviços</h3>
-                        <span>
-                            <img src={seta} alt="seta"/>
-                        </span>
-                    </Link>
-
-                    <Link to="" className="navigator">
-                        <h3>Contato</h3>
-                        <span>
-                            <img src={seta} alt="seta"/>
-                        </span>
-                    </Link>
-                </nav>
-
-            </header>
-
+            <Header title="Sobre a TMCI" nav1="Nossos Serviços" nav2="Contato" />
+            
             <section id="about-section">
                 <img src={marca} alt="Logomarca"/>
                 <section>

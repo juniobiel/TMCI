@@ -13,40 +13,6 @@
     align-items: center;
 }
 
-#about-container #page-header {
-    width: 100%;
-    background: #2E308B;
-    color: white;
-    margin-top: 1rem;
-    margin-bottom: 0.5rem;
-}
-
-#about-container #page-header h1 {
-    text-align: center;
-    margin-bottom: 1rem;
-}
-
-#about-container .navigator {
-    text-decoration: none;
-    width: 100%;
-    padding: 0.3rem 0;
-    background: #000;
-    color: white;
-    text-align: center;
-    margin-bottom: 0.6rem;
-    
-    display:flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-}
-
-#about-container .navigator h3,
-#about-container .navigator span {
-    margin-left: auto;
-    margin-right: 1rem;
-}
-
 #about-container #about-section {
     display: flex;
     flex-direction: column;
@@ -128,62 +94,6 @@
         height: 100vh;
 
         background-size: 50%;
-    }
-
-    #about-container #page-header {
-        display: flex;
-        flex-direction: row;
-        margin-top: 0;
-        height: 3rem;
-        align-items: center;
-        
-        justify-content: space-between;
-    }
-
-    #about-container #page-header h1 {
-        padding-left: 5rem;
-        margin-bottom: 0;
-    }
-
-    #about-container #page-header nav {
-        display: flex;
-        justify-content: right;
-        padding-right: 10rem
-    }
-
-    #about-container #page-header .navigator {
-        background: none;
-        text-decoration: none;
-        width: auto;
-        padding: 0;
-        background: none;
-        color: white;
-        text-align: center;
-        margin-bottom: 0;
-        
-        display:flex;
-        flex-direction: row;
-        justify-content: right;
-        align-items: center;
-        margin-right: 2rem;
-    }
-
-    #about-container #page-header .navigator + .navigator {
-        margin-right: 0;
-    }
-
-    #about-container .navigator h3,
-    #about-container .navigator span {
-        margin: 0;
-        transition: 0.2s;
-    }
-
-    #about-container #page-header .navigator img {
-        opacity: 0;
-    }
-
-    #about-container #page-header .navigator h3:hover {
-        color: cyan;
     }
 
     #about-container #about-section {

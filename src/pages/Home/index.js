@@ -24,7 +24,7 @@ function Home(){
                     </div>
                 </Link>
 
-                <Link to="">
+                <Link to="services">
                     <div className="menu-item">
                         
                             <h3>Nossos Serviços</h3>
@@ -32,7 +32,7 @@ function Home(){
                                         
                     </div>
                 </Link>
-                <Link to="">
+                <Link to="contato">
                     <div className="menu-item">
 
                         <h3>Contato</h3>

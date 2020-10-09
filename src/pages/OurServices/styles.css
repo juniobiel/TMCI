@@ -1,0 +1,26 @@
+#services-container {
+    width: 100%;
+    height: auto;
+
+    background-image: url('../../assets/images/circuitAbout.svg');
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+    background-attachment: fixed;
+    background-size: 100%;
+}
+
+#services-container .thumbnail {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem 0 1.6rem 0;
+}
+
+@media (min-width: 700px) {
+    #services-container {
+        height: 100vh;
+
+        background-size: 50%;
+    }
+}

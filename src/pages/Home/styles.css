@@ -1,0 +1,121 @@
+#container {
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background-image: url('../../assets/images/circuit.svg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+#container #logo-container {
+    width: 100vw;
+    height: 20rem;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 8rem;
+}
+
+#container #logo-container img {
+    height: 12rem;
+}
+
+#container #menu-container {
+    width: 100vw;
+    
+}
+
+#container #menu-container #menu-title {
+    font-weight: 600;
+    font-size: 1.4rem;
+    background: #2E308B;
+    padding: 0.4rem;
+    margin-bottom: 1rem;
+
+    text-align: center;
+    color: white;
+}
+
+#container #menu-container a {
+    text-decoration: none;
+    color: white;
+    transition: 0.2s;
+}
+
+#container #menu-container .menu-item {
+    margin-bottom: 0.5rem;
+    width: 100%;
+    background: black;
+
+    padding-left: 15vw;
+    padding-right: 15vw;
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+
+    display: flex;
+    justify-content: space-between;
+
+} 
+
+#container #menu-container .menu-item h3{
+    font-weight: 400;
+} 
+
+
+
+#container #menu-container .menu-item:hover,
+#container #menu-container .menu-item img:hover,
+#container #menu-container .menu-item a:hover {
+    opacity: 0.8;
+    color: #5278F2;
+    text-decoration: underline;
+}
+
+@media (min-width: 700px) {
+    #container {
+        flex-direction: row;
+        align-items: center;
+
+    }
+
+    #container #logo-container {
+        padding: 0;
+        margin: 0;
+    }
+
+    #container #logo-container img{
+        height: 30vh;
+    }
+
+    #container #menu-container a > .menu-item {
+        width: 30vw;
+    }   
+
+    #container #menu-container a + a > .menu-item {
+        width: 40vw;
+    }
+
+    #container #menu-container a + a + a > .menu-item {
+        width: 100%;
+    }
+
+    #container #menu-container .menu-item {
+        padding-left: 2rem;
+        
+        display:flex;
+        align-items: center;
+        position: relative;
+    }
+
+    #container #menu-container .menu-item img {
+        right: 2rem;
+        position: absolute;
+    }
+
+}

@@ -1,0 +1,33 @@
+.service {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.service .service-title {
+    width: 100vw;
+    text-align: center;
+    margin-top: 1rem;
+    background-color: #C4C4C4;
+}
+
+.service .service-description {
+    width: 100vw;
+    text-align: justify;
+    padding: 0.6rem 1.4rem;
+    background-color: rgba(196, 196, 196, 0.45);
+}
+
+@media (min-width: 700px) {
+    .service .service-title {
+        width: 50vw;
+    }
+
+    .service .service-description {
+        width: 50vw;
+        text-align: center;
+        padding: 0.6rem 1.5rem;
+        background-color: rgba(196, 196, 196, 0.45);
+    }
+}

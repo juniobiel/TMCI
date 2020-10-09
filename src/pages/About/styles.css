@@ -1,0 +1,138 @@
+#about-container {
+    width: 100%;
+    height: auto;
+
+    background-image: url('../../assets/images/circuitAbout.svg');
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+    background-attachment: fixed;
+    background-size: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#about-container #about-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#about-container #about-section img {
+    height: 9rem;
+}
+
+#about-container #about-section section p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    padding-left: 1rem;
+    padding-right: 1.6rem;
+    text-indent: 1rem;
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+    line-height: 1.3rem;
+}
+
+#about-container #history-section #history-title {
+    width: 100%;
+    background: #000;
+    color: white;
+    padding: 0.4rem;
+    margin-bottom: 1rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#about-container #history-section section p {
+    text-align: justify;
+    padding-left: 1rem;
+    padding-right: 1.6rem;
+    text-indent: 1rem;
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+    line-height: 1.3rem;
+}
+
+#about-container #history-section section p + p + p {
+    text-decoration: underline;
+}
+
+
+#about-container #pillars .pillar-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 85%;
+    background: #2E308B;
+    color: white;
+
+    margin-bottom: 1rem;
+}
+
+#about-container #pillars .pillar-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-align: justify;
+    padding-left: 1rem;
+    padding-right: 1.6rem;
+    text-indent: 1rem;
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+    line-height: 1.3rem;
+}
+
+@media (min-width: 700px) {
+    #about-container {
+        height: 100vh;
+
+        background-size: 50%;
+    }
+
+    #about-container #about-section {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #about-container #about-section img {
+        height: 15rem;
+        margin-left: 2rem;
+    }
+
+    #about-container #about-section section p {
+        padding-right: 3rem;
+        line-height: 1.5rem;
+        font-size: 1.4rem;
+    }
+
+    #about-container #history-section #history-title{
+        width: 60%;
+    }
+
+    #about-container #history-section section p {
+        padding-left: 5rem;
+        padding-right: 15rem;
+    }
+
+    #about-container #pillars {
+        width: 100%;
+    }
+
+    #about-container #pillars .pillar-title {
+        width: 40%;
+    }
+
+    #about-container #pillars .pillar-body {
+        justify-content: left;
+        padding-left: 5rem;
+    }
+}

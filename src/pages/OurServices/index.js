@@ -4,6 +4,8 @@ import {FcDownload} from 'react-icons/fc';
 import Header from '../../components/Header';
 import ServiceArea from '../../components/ServiceArea';
 
+import cartilha from '../../assets/TMCI Eletrica.pdf';
+
 import './styles.css';
 
 function Services(){
@@ -12,7 +14,9 @@ function Services(){
             <Header title="Nossos Serviços" nav1="Sobre a TMCI" nav2="Contato" />
             <section className="thumbnail">
                 <h1>Baixe a cartilha de serviços</h1>
-                <FcDownload size={100}/>
+                <a href={cartilha} alt="Portifólio de serviços" target="_blank" rel="noopener noreferrer" >
+                    <FcDownload size={100}/>
+                </a>
             </section>
 
             <ServiceArea 
@@ -42,7 +46,7 @@ function Services(){
             <ServiceArea 
             title="Sistemas Projetos e Obras" 
             p1="Projetar e construir" 
-            p2="Construção do início ao acabamento, pintura, instalação, demolição, adequações de construções, e muito mais."
+            p2="Construção do início ao acabamento, pintura, instalação, demolição, e muito mais."
             />
             
         </div>

@@ -16,19 +16,21 @@ app.post('/sendMail', (request, response) => {
         userName,
         userEmail,
         userWhatsApp,
+        userSubject,
         userMessage
     } = request.body;
 
 
 
     const message = {
-        from: 'contato@tmcieletrica.com.br',
+        from: userEmail,
         to: 'marcos@tmcieletrica.com.br',
         subject: '[CONTATO WEBSITE] NOVA SOLICITAÇÃO',
         text: `
             Nome: ${userName} 
             Email: ${userEmail}
             WhatsApp: ${userWhatsApp} 
+            Assunto: ${userSubject}
             Mensagem: ${userMessage}`
 
     };
@@ -64,3 +66,4 @@ app.get("*", (req, res) => {// O wildcard '*' serve para servir o mesmo index.ht
 app.listen(configs.port, () => {
     console.log(`Escutando na ${configs.port}!`);
 });
+

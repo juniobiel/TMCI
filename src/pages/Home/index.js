@@ -32,7 +32,7 @@ function Home(){
                                         
                     </div>
                 </Link>
-                <Link to="contato">
+                <Link to="contact">
                     <div className="menu-item">
 
                         <h3>Contato</h3>

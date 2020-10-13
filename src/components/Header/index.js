@@ -13,11 +13,11 @@ function Header(props){
     switch(props.title){
         case "Sobre a TMCI":
             link1 = "services";
-            link2 = "contato";
+            link2 = "contact";
             break;
         case "Nossos Serviços":
             link1 = "about";
-            link2 = "contato";
+            link2 = "contact";
             break;
         case "Contato":
             link1 = "about";
@@ -31,25 +31,25 @@ function Header(props){
     
     return (
         <header id="page-header">
-        <h1>{props.title}</h1>
+            <h1>{props.title}</h1>
 
-        <nav>
-            <Link to={link1} className="navigator">
-                <h3>{props.nav1}</h3>
-                <span>
-                    <img src={seta} alt="seta"/>
-                </span>
-            </Link>
+            <nav>
+                <Link to={link1} className="navigator">
+                    <h3>{props.nav1}</h3>
+                    <span>
+                        <img src={seta} alt="seta"/>
+                    </span>
+                </Link>
 
-            <Link to={link2} className="navigator">
-                <h3>{props.nav2}</h3>
-                <span>
-                    <img src={seta} alt="seta"/>
-                </span>
-            </Link>
-        </nav>
+                <Link to={link2} className="navigator">
+                    <h3>{props.nav2}</h3>
+                    <span>
+                        <img src={seta} alt="seta"/>
+                    </span>
+                </Link>
+            </nav>
 
-    </header>
+        </header>
     );
 }
 

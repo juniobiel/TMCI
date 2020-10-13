@@ -77,7 +77,7 @@ function Contact(){
                     <div className="form-input">
                         <label>WhatsApp</label>
                         <input 
-                            placeholder="(19) 99190-9091" 
+                            placeholder="Digite seu WhatsApp p. ex: (19) 99190-9091" 
                             value={whatsappNumber}
                             onChange={e => setWhatsappNumber(e.target.value)}
                             required 
@@ -88,7 +88,7 @@ function Contact(){
                         <label>E-mail</label>
                         <input 
                             type="email" 
-                            placeholder="contato@tmcieletrica.com.br" 
+                            placeholder="Digite seu e-mail" 
                             value={email}
                             onChange={e => setEmail(e.target.value)}
                             required 
@@ -98,7 +98,7 @@ function Contact(){
                     <div className="form-input">
                         <label>Assunto</label>
                         <input 
-                            placeholder="Orçamento" 
+                            placeholder="Qual é o assunto?" 
                             value={subject}
                             onChange={e => setSubject(e.target.value)}
                             required
@@ -109,7 +109,7 @@ function Contact(){
                         <label>Mensagem</label>
                         <textarea 
                             name="message" id="message" 
-                            placeholder="Descreva sua solicitação aqui" 
+                            placeholder="Descreva sua mensagem aqui" 
                             value={message}
                             onChange={e => setMessage(e.target.value)}
                             required 

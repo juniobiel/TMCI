@@ -3,7 +3,7 @@ const mailerConfig = {
     port: 587,
     auth: {
       user: 'contato@tmcieletrica.com.br',
-      pass: 'Contato@321'
+      pass: 'eZBU6@Wo3.v_Q'
     }
   };
   
